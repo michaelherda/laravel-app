@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<title>Hello, world!</title>
+	<title>@yield('title')</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,6 +21,7 @@
 				<div class="navbar-nav">
 					<a class="nav-item nav-link active" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link" href="{{url('/mahasiswa')}}">Mahasiswa</a>
+					<a class="nav-item nav-link" href="{{url('/students')}}">Students</a>
 					<a class="nav-item nav-link" href="{{url('/about')}}">About</a>
 				</div>
 			</div>
